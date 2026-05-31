@@ -35,7 +35,9 @@ PoolStats s = pool.stats();
 ## 编译 & 运行
 
 ```bash
-g++ -std=c++17 -pthread -O2 -o threadpool_test main.cpp
+mkdir build && cd build
+cmake ..
+make
 ./threadpool_test
 ```
 
